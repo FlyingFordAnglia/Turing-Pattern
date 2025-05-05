@@ -1,0 +1,32 @@
+# Overview
+This repository contains a simple implementation of a reaction diffusion system using the Gray-Scott model. 
+The Gray-Scott model is a mathematical model that describes the interaction of two chemical substances that diffuse and react with each other. 
+The model is defined by a set of partial differential equations (PDEs) that describe the concentration of the two substances over time and space.
+The implementation discretizes the PDEs and simulates the reaction diffusion process on a 2D grid.
+## Gray Scott model
+In this system, there are two chemical species, u and v, whose reaction can be described as:
+The reaction is: 
+
+![image](https://github.com/user-attachments/assets/4ea761fe-e9f6-4282-aa50-2c3a9fc4f110)
+
+The following partial differential equations describe the model:
+
+![image](https://github.com/user-attachments/assets/54671cb2-5df9-47c0-a3fc-45dfc1d587bb)
+
+Where each equation describes the rate of change of the chemical species at a point in space. Du and Dv are the diffusion coefficients that interact with the spatial Laplacian 𝛁2. The reaction term uv2 is a consequence of the stoichiometry of the reaction equation. F is the feed rate of the chemical species, and k is the kill rate.
+
+The `create_interactive_simulation()` function creates an interactive plot with sliders to control the parameters.
+The `simulate_phase_diagram_movie` function creates a animated gif that shows the entire simulation. The gif will be saved in the same directory as code file. It will also output a static plot of the final timepoint.
+Some example gifs can be seen in the sample_visualisations directory of this repository.
+# Version information
+Python: 3.12.4
+
+jupyterlab: 4.3.6
+
+numpy: 1.26.4
+
+matplotlib: 3.8.3
+
+ipywidgets: 8.1.5
+
+ipython: 8.25.0
