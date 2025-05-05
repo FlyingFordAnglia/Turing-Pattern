@@ -15,6 +15,9 @@ The following partial differential equations describe the model:
 
 Where each equation describes the rate of change of the chemical species at a point in space. **Du** and **Dv** are the **diffusion coefficients** that interact with the spatial Laplacian 𝛁2. The reaction term uv2 is a consequence of the stoichiometry of the reaction equation. **F** is the **feed rate** of the chemical species, and **k** is the **kill rate**. For a Tuning pattern to form, it is essential that u diffuses faster than v.
 
+The main file to be run is Turing_pattern_combined.ipynb in the code directory of this repository.
+
+
 The `create_interactive_simulation()` function creates an interactive plot with sliders to control the parameters.
 
 ![image](https://github.com/user-attachments/assets/cd8688d3-5c87-4241-8336-5d182e9a4038)
