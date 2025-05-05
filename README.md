@@ -13,9 +13,33 @@ The following partial differential equations describe the model:
 
 ![image](https://github.com/user-attachments/assets/54671cb2-5df9-47c0-a3fc-45dfc1d587bb)
 
-Where each equation describes the rate of change of the chemical species at a point in space. Du and Dv are the diffusion coefficients that interact with the spatial Laplacian 𝛁2. The reaction term uv2 is a consequence of the stoichiometry of the reaction equation. F is the feed rate of the chemical species, and k is the kill rate.
+Where each equation describes the rate of change of the chemical species at a point in space. **Du** and **Dv** are the **diffusion coefficients** that interact with the spatial Laplacian 𝛁2. The reaction term uv2 is a consequence of the stoichiometry of the reaction equation. **F** is the **feed rate** of the chemical species, and **k** is the **kill rate**. For a Tuning pattern to form, it is essential that u diffuses faster than v.
+
+The main file to be run is Turing_pattern_combined.ipynb in the code directory of this repository.
+
 
 The `create_interactive_simulation()` function creates an interactive plot with sliders to control the parameters.
+
+![image](https://github.com/user-attachments/assets/cd8688d3-5c87-4241-8336-5d182e9a4038)
+
+In addition to the feed rate, kill rate, Du and Dv, we can also change the following:
+
+**Frame**: This slider is essentially a play button. As we move the slider forward, the simulation progresses along time. When the slider is at 0, the perturbations which have been initialized can be seen. When the slider is at its max value, the final pattern is seen.
+
+**Grid size**: This slider allows one to control the spatial extent of the simulation.
+
+**Sample interval**: Since storing the entire simulation is a memory-heavy process, this slider allows one to control how many frames are stored. For example, in this image, every 10th frame is stored in memory.
+
+**Perturbations**: This slider controls the number of perturbations the simulation is initiated with.
+
+**Method**: The simulation can be run either using the Forward Euler method of integration, or the 4th order Runge Kutta method.
+
+**dt**: controls the time step size
+
+**Total time**: the total time of the simulation.
+
+
+
 The `simulate_phase_diagram_movie` function creates a animated gif that shows the entire simulation. The gif will be saved in the same directory as code file. It will also output a static plot of the final timepoint.
 Some example gifs can be seen in the sample_visualisations directory of this repository.
 # Version information
