@@ -45,7 +45,9 @@ Some example gifs can be seen in the sample_visualisations directory of this rep
 # Version information
 Python: 3.12.4
 
-jupyterlab: 4.3.6
+jupyterlab: 4.4.1
+
+notebook: 7.4.1
 
 numpy: 1.26.4
 
