@@ -67,7 +67,7 @@ scikit-learn: 1.5.0
 
 seaborn: 0.13.2
 
-## ipywidgets not rendered
-If the widget gets stuck at "Loading widget..."
+## If the widget gets stuck at "Loading widget..."
+
 ipywidgets requires frontend extensions to render properly. If they're not installed or compatible, the widget won't display. Try running the following locally in the environment:
 `pip install --upgrade notebook ipywidgets`
