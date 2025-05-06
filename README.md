@@ -54,3 +54,16 @@ matplotlib: 3.8.3
 ipywidgets: 8.1.5
 
 ipython: 8.25.0
+
+scikit-image: 0.25.2
+
+pandas: 2.2.2
+
+scipy: 1.12.0
+
+scikit-learn: 1.5.0
+
+seaborn: 0.13.2
+
+## ipywidgets not rendered
+ipywidgets requires frontend extensions to render properly. If they're not installed or compatible, the widget won't display. Try installing jupyter locally in the environment and then installing ipywidgets.
